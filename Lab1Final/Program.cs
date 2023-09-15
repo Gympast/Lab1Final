@@ -1,5 +1,5 @@
 ﻿//Skapar variabel för att spara slutsumman i.
-int sum = 0;
+long sum = 0;
 
 //Frågar användaren efter en sträng
 Console.WriteLine("Mata in en sträng: ");
@@ -39,7 +39,7 @@ for (int i = 0; i < input.Length; i++)
             Console.WriteLine(input.Substring(j + 1));
 
             //Lägger till det markerade talet till varibeln "sum"
-            sum += int.Parse(input.Substring(i, j - i + 1));
+            sum += long.Parse(input.Substring(i, j - i + 1));
 
             //bryter loopen
             break;
