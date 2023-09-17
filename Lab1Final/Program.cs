@@ -14,7 +14,7 @@ for (int i = 0; i < input.Length; i++)
     //går igenom strängen igen...
     for (int j = i + 1; j < input.Length; j++)
     {
-        //kollar om tecknet på plats "j" inte är en siffra eller om plats "i" och "j" är likadana
+        //kollar om tecknet på plats "j" inte är en siffra eller om plats "i" och platsen bredvid "i" är likadana
         if (!Char.IsDigit(input[j]) || input[i] == input[i + 1])
         {
             break;
